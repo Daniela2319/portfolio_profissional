@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+
+  <title>{% block title %}Meu Projeto{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/output.css' %}" type="text/css">
+</head>
+
+
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="{% url 'home' %}" class="text-2xl font-bold text-yellow-400">DANIELA VELTER</a>
+      <ul class="flex space-x-6">
+        <li><a href="#sobre" class="hover:text-yellow-400">Sobre</a></li>
+        <li><a href="#projetos" class="hover:text-yellow-400">Projetos</a></li>
+        <li><a href="{% url 'contato' %}" class="hover:text-yellow-400">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-500">
+    <p>© 2025 Daniela Velter. Todos os direitos reservados.</p>
+  </footer>
+
+
+</body>
+
+</html>

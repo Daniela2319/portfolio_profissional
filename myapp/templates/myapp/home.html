@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Portfólio - Home
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="h-screen flex items-center justify-center bg-cover bg-center"
+  style="background-image: url('{% static 'img/portifolio2.jpg' %}')">
+  <div class="text-center">
+    <h1 class="text-5xl font-extrabold">Olá, sou <span class="text-yellow-400">DANIELA</span></h1>
+    <p class="mt-4 text-lg">Desenvolvedor Front-End | Criador de Soluções Web</p>
+    <a href="#projetos"
+      class="mt-6 inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-yellow-300 transition">Veja
+      meus projetos</a>
+  </div>
+</section>
+
+<!-- Sobre mim -->
+<section id="sobre" class="py-20 bg-gray-800">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-yellow-400 mb-6">Sobre Mim</h2>
+    <p class="text-lg leading-relaxed">Sou um desenvolvedor apaixonado por criar interfaces funcionais e atraentes.
+      Trabalho com tecnologias modernas como HTML, CSS, JavaScript e frameworks como React e Tailwind CSS. Adoro
+      resolver problemas e transformar ideias em realidade.</p>
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="py-20">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-yellow-400 mb-10">Meus Projetos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="{% static 'img/projeto1a.png' %}" alt="Projeto 1" class="rounded-md mb-4 w-full h-48 object-cover"
+          style="width: 100%; height: auto;">
+        <h3 class="text-2xl font-bold mb-2">Projeto 1</h3>
+        <p class="text-gray-400">Descrição breve do projeto. Tecnologias usadas e propósito.</p>
+        <a href="#" class="text-yellow-400 hover:underline">Veja mais</a>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="{% static 'img/projeto2a.png' %}" alt="Projeto 2" class="rounded-md mb-4 w-full h-48 object-cover"
+          style="width: 100%; height: auto;">
+        <h3 class="text-2xl font-bold mb-2">Projeto 2</h3>
+        <p class="text-gray-400">Descrição breve do projeto. Tecnologias usadas e propósito.</p>
+        <a href="#" class="text-yellow-400 hover:underline">Veja mais</a>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+        <img src="{% static 'img/projeto3.png' %}" alt="Projeto 3" class="rounded-md mb-4 w-full h-48 object-cover"
+          style="width: 100%; height: 230px;">
+        <h3 class="text-2xl font-bold mb-2">Projeto 3</h3>
+        <p class="text-gray-400">Descrição breve do projeto. Tecnologias usadas e propósito.</p>
+        <a href="#" class="text-yellow-400 hover:underline">Veja mais</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+{% endblock %}
