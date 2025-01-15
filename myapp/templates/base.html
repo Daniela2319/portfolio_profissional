@@ -18,8 +18,8 @@
     <div class="container mx-auto flex justify-between items-center">
       <a href="{% url 'home' %}" class="text-2xl font-bold text-yellow-400">DANIELA VELTER</a>
       <ul class="flex space-x-6">
-        <li><a href="#sobre" class="hover:text-yellow-400">Sobre</a></li>
-        <li><a href="#projetos" class="hover:text-yellow-400">Projetos</a></li>
+        <li><a href="{% url 'sobre' %}" class="hover:text-yellow-400">Sobre</a></li>
+        <li><a href="{% url 'projeto' %}" class="hover:text-yellow-400">Projetos</a></li>
         <li><a href="{% url 'contato' %}" class="hover:text-yellow-400">Contato</a></li>
       </ul>
     </div>
@@ -30,9 +30,44 @@
 
 
   <!-- Footer -->
-  <footer class="py-6 bg-gray-900 text-center text-gray-500">
-    <p>© 2025 Daniela Velter. Todos os direitos reservados.</p>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 lg:px-20">
+      <!-- Linha de Divisão -->
+      <div class="border-b border-gray-600 pb-6 mb-6">
+        <!-- Logo e Navegação -->
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="text-2xl font-bold text-yellow-400 mb-4 lg:mb-0">
+            Daniela Velter
+          </a>
+          <!-- Links de Navegação -->
+          <ul class="flex space-x-6 text-gray-400">
+            <li><a href="#sobre" class="hover:text-yellow-400">Sobre</a></li>
+            <li><a href="#projetos" class="hover:text-yellow-400">Projetos</a></li>
+            <li><a href="#contato" class="hover:text-yellow-400">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="flex justify-center space-x-6">
+        <!-- GitHub -->
+        <a href="https://github.com/seu_usuario" target="_blank" class="text-gray-400 hover:text-yellow-400">
+          <img src="{% static 'img/icons/github.svg' %}" alt="GitHub" class="h-6 w-6">
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/seu_usuario" target="_blank" class="text-gray-400 hover:text-yellow-400">
+          <img src="{% static 'img/icons/linkedin.svg' %}" alt="LinkedIn" class="h-6 w-6">
+        </a>
+      </div>
+
+      <!-- Direitos Autorais -->
+      <div class="text-center text-gray-400 mt-6">
+        <p>© 2025 Daniela Velter. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
+
 
 
 </body>

@@ -11,7 +11,7 @@ Portfólio - Home
   style="background-image: url('{% static 'img/portifolio2.jpg' %}')">
   <div class="text-center">
     <h1 class="text-5xl font-extrabold">Olá, sou <span class="text-yellow-400">DANIELA</span></h1>
-    <p class="mt-4 text-lg">Desenvolvedor Front-End | Criador de Soluções Web</p>
+    <p class="mt-4 text-lg">Desenvolvedora Front-End e Back-End | Soluções Web</p>
     <a href="#projetos"
       class="mt-6 inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-yellow-300 transition">Veja
       meus projetos</a>
@@ -22,11 +22,41 @@ Portfólio - Home
 <section id="sobre" class="py-20 bg-gray-800">
   <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold text-yellow-400 mb-6">Sobre Mim</h2>
-    <p class="text-lg leading-relaxed">Sou um desenvolvedor apaixonado por criar interfaces funcionais e atraentes.
+    <p class="text-lg leading-relaxed">Sou um desenvolvedor apaixonado por criar interfaces funcionais
+      e atraentes.
       Trabalho com tecnologias modernas como HTML, CSS, JavaScript e frameworks como React e Tailwind CSS. Adoro
       resolver problemas e transformar ideias em realidade.</p>
+    <a href="{% url 'sobre' %}" class="text-yellow-400 hover:underline  p-1">Veja mais</a>
   </div>
 </section>
+
+<!-- Carrossel de Tecnologias -->
+<div class="p-4">
+  <P class="text-yellow-400 text-center font-bold text-2xl">TECNOLOGIAS</P>
+</div>
+<div class="container   flex justify-center items-center mt-10 p-4">
+  <div class="overflow-hidden relative">
+    <!-- Lista de Logos -->
+    <div class="animate-scroll">
+      <div class="flex justify-center items-center">
+        <!-- Primeira sequência de logos -->
+        <img src="{% static 'img/logo/circuloA.png' %}" alt="Python" class="h-28">
+        <img src="{% static 'img/logo/circuloB.png' %}" alt="Java" class="h-28">
+        <img src="{% static 'img/logo/circuloG.png' %}" alt="HTML" class="h-28">
+        <img src="{% static 'img/logo/circuloF.png' %}" alt="Django" class="h-28">
+        <img src="{% static 'img/logo/circuloD.png' %}" alt="SQL" class="h-28">
+        <img src="{% static 'img/logo/circuloC.png' %}" alt="GitHub" class="h-28">
+        <!-- Cópia para loop infinito -->
+        <img src="{% static 'img/logo/circuloA.png' %}" alt="Python" class="h-28">
+        <img src="{% static 'img/logo/circuloB.png' %}" alt="Java" class="h-28">
+        <img src="{% static 'img/logo/circuloG.png' %}" alt="HTML" class="h-28">
+        <img src="{% static 'img/logo/circuloF.png' %}" alt="Django" class="h-28">
+        <img src="{% static 'img/logo/circuloD.png' %}" alt="SQL" class="h-28">
+        <img src="{% static 'img/logo/circuloC.png' %}" alt="GitHub" class="h-28">
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Projetos -->
 <section id="projetos" class="py-20">
