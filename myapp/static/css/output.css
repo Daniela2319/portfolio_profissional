@@ -957,3 +957,20 @@ video {
   will-change: transform; /* Otimiza a performance da animação */
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+
+
+

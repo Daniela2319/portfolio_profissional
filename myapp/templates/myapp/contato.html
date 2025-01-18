@@ -9,30 +9,34 @@ Portfólio - Contato
 <!-- Contato -->
 <section id="contato" class="py-20 bg-gray-800">
   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold text-yellow-400 mb-6">Entre em Contato</h2>
+    <div class="flex flex-col items-center mt-10 p-4"></div>
+    <h2 class="text-4xl font-bold text-yellow-400 text-center ">Entre em Contato</h2>
     <p class="mb-6 text-lg">Adoraria ouvir de você! Entre em contato através do formulário abaixo.</p>
+  </div>
 
-    <!-- Mensagem de Sucesso ou Erro -->
-    {% if mensagem %}
-    <div class="max-w-lg mx-auto mb-6">
-      <div class="p-4 rounded shadow-lg 
+
+
+  <!-- Mensagem de Sucesso ou Erro -->
+  {% if mensagem %}
+  <div class="max-w-lg mx-auto mb-6">
+    <div class="p-4 rounded shadow-lg 
                       {% if estilo == 'success' %} bg-green-100 text-green-800 border-l-4 border-green-500 {% endif %}
                       {% if estilo == 'error' %} bg-red-100 text-red-800 border-l-4 border-red-500 {% endif %}">
-        {{ mensagem }}
-      </div>
+      {{ mensagem }}
     </div>
-    {% endif %}
-    <form action="{% url 'contato' %}" method="POST" id="form" class="max-w-lg mx-auto space-y-4">
-      {% csrf_token %}
-      <input type="text" name="nome" placeholder="Seu Nome"
-        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-yellow-400">
-      <input type="email" name="email" placeholder="Seu E-mail"
-        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-yellow-400">
-      <textarea name="mensagem" placeholder="Sua Mensagem"
-        class="w-full p-3 rounded bg-gray-700 text-white focus:outline-yellow-400 h-32"></textarea>
-      <button type="submit"
-        class="w-full bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-yellow-300 transition">Enviar</button>
-    </form>
+  </div>
+  {% endif %}
+  <form action="{% url 'contato' %}" method="POST" id="form" class="max-w-lg mx-auto space-y-4">
+    {% csrf_token %}
+    <input type="text" name="nome" placeholder="Seu Nome"
+      class="w-full p-3 rounded bg-gray-700 text-white focus:outline-yellow-400">
+    <input type="email" name="email" placeholder="Seu E-mail"
+      class="w-full p-3 rounded bg-gray-700 text-white focus:outline-yellow-400">
+    <textarea name="mensagem" placeholder="Sua Mensagem"
+      class="w-full p-3 rounded bg-gray-700 text-white focus:outline-yellow-400 h-32"></textarea>
+    <button type="submit"
+      class="w-full bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-yellow-300 transition">Enviar</button>
+  </form>
   </div>
 </section>
 {% endblock %}
