@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Portfólio - Projetos
+{% endblock %}
+
+{% block content %}
+
+<section id="projetos" class="py-20 bg-gray-100 text-gray-800">
+  <div class="container mx-auto px-6 lg:px-20">
+    <!-- Título da Seção -->
+    <div class="flex flex-col items-center mt-10 p-4"></div>
+    <h2 class="text-4xl font-bold text-center ">Meus Projetos</h2>
+  </div>
+
+  <!-- Grade de Projetos -->
+  <div class="grid grid-row-1 md:grid-row-2 lg:grid-row-3 gap-8 mt-10 p-4">
+    <!-- Projeto 1 -->
+    <div class="p-2 flex flex-col items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <img src="{% static 'img/rotaa.png' %}" alt="Projeto 1" class="w-44 h-40 object-cover rounded-md">
+    </div>
+    <div
+      class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex place-items-start">
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold mb-3 text-yellow-400">Projeto Site Rota do Pão</h3>
+        <p id="project" class="text-gray-600 mb-4">
+          <strong>Descrição:</strong><br>
+          O sistema foi idealizado para atender à demanda de consumidores que buscam praticidade na aquisição de pães
+          e outros itens essenciais, com a possibilidade de configurar entregas recorrentes diretamente no conforto de
+          suas casas.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Principais funcionalidades:</strong><br>
+          - Modelo de conveniência: Compra rápida e fácil, com uma interface intuitiva.<br>
+          - Modelo de recorrência: Configuração de entregas automáticas e periódicas para produtos selecionados.<br>
+          - Catálogo de produtos: Exibição organizada de produtos com detalhes e preços.<br>
+          - Carrinho de compras: Gerenciamento de itens selecionados para compra.<br>
+          - Checkout simples: Processo de finalização de compras eficiente.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Tecnologias utilizadas:</strong><br>
+          - Visual Studio Code: Ambiente de desenvolvimento integrado (IDE).<br>
+          - HTML: Estrutura e organização do conteúdo da aplicação.<br>
+          - CSS: Estilização e criação de design responsivo.<br>
+          - JavaScript: Dinamismo e interatividade no frontend.<br>
+          - Git: Controle de versão para organização e histórico de mudanças.<br>
+          - GitHub: Plataforma para hospedagem e colaboração do código.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projeto 2 -->
+    <div class="p-2 flex flex-col items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <img src="{% static 'img/bloga.png' %}" alt="Projeto 1" class="w-44 h-40 object-cover rounded-md">
+    </div>
+    <div
+      class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex place-items-start">
+      <div class="p-6">
+        <h3 class="text-2xl font-semibold text-yellow-400 p-2">Projeto Blog Colaborativo</h3>
+        <p class="text-gray-600 mb-4">
+          <strong>Descrição:</strong><br>
+          O Blog Colaborativo é um projeto desenvolvido em grupo, utilizando Python e o framework Django, com o
+          objetivo de criar uma plataforma completa para publicações e interação entre usuários. O sistema oferece
+          recursos robustos de postagem, comentários, autenticação, gerenciamento de perfis de usuários e uma
+          funcionalidade eficiente de busca por postagens.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Principais funcionalidades:</strong><br>
+          - Sistema de Postagens: Criação, edição e exibição de posts organizados em ordem cronológica.<br>
+          - Comentários: Permite que os usuários interajam com as postagens, deixando seus feedbacks diretamente na
+          página de detalhes.<br>
+          - Autenticação de Login: Sistema seguro de registro e login, garantindo o acesso exclusivo às
+          funcionalidades personalizadas.<br>
+          - Gerenciamento de Perfil de Usuário: Cada usuário pode personalizar sua bio e imagem de perfil.<br>
+          - Busca de Postagens: Pesquisa eficiente de conteúdos por palavras-chave, otimizando a experiência do
+          usuário.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Tecnologias utilizadas:</strong><br>
+          - Python: Linguagem de programação principal para o desenvolvimento do backend.<br>
+          - Django: Framework para construção de aplicações web escaláveis e seguras.<br>
+          - HTML5: Estruturação das páginas do blog.<br>
+          - CSS3: Estilização das interfaces com design responsivo.<br>
+          - Bootstrap: Framework para facilitar o design responsivo e estilização.<br>
+          - Git: Controle de versão do código.<br>
+          - GitHub: Plataforma para hospedagem e colaboração do código.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projeto 3 -->
+
+</section>
+{% endblock %}

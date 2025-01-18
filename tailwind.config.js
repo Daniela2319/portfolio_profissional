@@ -5,7 +5,13 @@ module.exports = {
     './myapp/static/js/**/*.js',   // Caminho para arquivos JS
 ],
   theme: {
-    extend: {},
+    extend: { transitionDuration: {
+      500: "500ms",
+    },
+    rotate: {
+      180: "180deg",
+    },
+  },
   },
   plugins: [],
 }

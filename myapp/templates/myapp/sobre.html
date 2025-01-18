@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Portfólio - Sobre
+{% endblock %}
+
+{% block content %}
+<section id="sobre" class="py-20 bg-gray-800 text-white">
+  <div class="container mx-auto px-6 lg:px-20">
+    <!-- Título -->
+    <h2 class="text-4xl font-bold text-yellow-400 text-center mb-10">Sobre Mim</h2>
+
+    <!-- Introdução Pessoal -->
+    <div class="mb-10 flex flex-col lg:flex-row items-center lg:items-start lg:gap-8">
+      <!-- Imagem de Apresentação -->
+      <div class="flex-shrink-0 border-4 border-yellow-400 p-2 rounded-full">
+        <img src="{% static 'img/dani.png' %}" alt="Daniela Velter"
+          class="w-48 h-48 lg:w-56 lg:h-56 rounded-full shadow-lg border-4 border-yellow-400">
+      </div>
+
+      <!-- Texto de Apresentação -->
+      <div class="mt-6 lg:mt-0 font-roboto bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+        <p class="text-lg leading-relaxed text-right lg:text-left mb-4">
+          Olá! Sou <span class="font-semibold text-yellow-400">Daniela Velter</span>
+          uma profissional com uma trajetória rica e diversificada. Trabalhei no setor de soldagem em uma
+          metalúrgica, onde desenvolvi habilidades técnicas, atenção aos detalhes e comprometimento com prazos. Após
+          esse período, decidi focar na construção da minha família e me dediquei integralmente ao cuidado do meu filho.
+        </p>
+        <p class="text-lg leading-relaxed text-right lg:text-left mb-4">
+          Durante essa fase, empreendi por três anos, criando e comercializando produtos que chegaram às prateleiras de
+          mercados locais, demonstrando minha capacidade de inovação, gestão e negociação.
+        </p>
+        <p class="text-lg leading-relaxed text-right lg:text-left">
+          Hoje, estou focada na área de tecnologia e encaro os desafios com determinação e resiliência. Se me perguntam
+          se tecnologia é difícil, minha resposta é não. As experiências que acumulei ao longo do tempo me ensinaram a
+          lidar com desafios, a persistir diante de obstáculos e a buscar soluções criativas para alcançar meus
+          objetivos. Acredito que a tecnologia é uma ferramenta poderosa para transformar vidas e estou comprometida em
+          contribuir para um mundo mais inclusivo e inovador.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Habilidades -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Habilidades</h3>
+      <ul class="list-disc list-inside text-lg bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+        <li>Desenvolvimento Front-End: HTML, CSS, Tailwind CSS, JavaScript</li>
+        <li>Desenvolvimento Back-End: Python, Java </li>
+        <li>Frameworks: React, Django</li>
+        <li>Banco de Dados: PostgreSQL, SQL</li>
+        <li>Controle de Versão: Git, GitHub</li>
+        <li>Ferramentas: DBeaver, VS Code</li>
+      </ul>
+    </div>
+
+    <!-- Competências Soft Skills -->
+    <div>
+      <h3 class="text-2xl font-semibold text-yellow-400 mt-6 mb-4">Competências Soft Skills</h3>
+      <ul class="space-y-6">
+        <!-- Competência 1 -->
+        <li>
+          <div class="bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold text-yellow-400">Trabalho em Equipe</h4>
+            <p class="mt-2 text-gray-300">
+              Desenvolvi a habilidade de colaborar em equipes multidisciplinares durante bootcamps, participando de
+              projetos que exigiam comunicação eficaz, divisão de tarefas e suporte mútuo.
+            </p>
+          </div>
+        </li>
+        <!-- Competência 2 -->
+        <li>
+          <div class="bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold text-yellow-400">Gestão de Tempo</h4>
+            <p class="mt-2 text-gray-300">
+              Aprendi a gerenciar prazos e prioridades em projetos compartilhados, garantindo entregas dentro do prazo
+              enquanto mantinha a qualidade do trabalho.
+            </p>
+          </div>
+        </li>
+        <!-- Competência 3 -->
+        <li>
+          <div class="bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold text-yellow-400">Resolução de Problemas</h4>
+            <p class="mt-2 text-gray-300">
+              Adquiri habilidades para analisar desafios técnicos e propor soluções criativas, utilizando técnicas como
+              brainstorming e prototipação.
+            </p>
+          </div>
+        </li>
+        <!-- Competência 4 -->
+        <li>
+          <div class="bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold text-yellow-400">Adaptabilidade</h4>
+            <p class="mt-2 text-gray-300">
+              Desenvolvi a capacidade de me adaptar a novas ferramentas, tecnologias e metodologias em ambientes de
+              aprendizado dinâmicos e colaborativos.
+            </p>
+          </div>
+        </li>
+        <!-- Competência 5 -->
+        <li>
+          <div class="bg-gray-700 mb-4 p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-bold text-yellow-400">Comunicação Eficaz</h4>
+            <p class="mt-2 text-gray-300">
+              Aperfeiçoei minhas habilidades de comunicação ao apresentar ideias, fornecer feedback e documentar
+              projetos em ambientes colaborativos.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+{% endblock %}
