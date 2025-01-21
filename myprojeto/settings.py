@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-pxk&^gr31!i9@duioutov2ionja@89adjexa+b5!kq0rbk-ao^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -42,19 +42,6 @@ INSTALLED_APPS = [
     # "tailwind",
 ]
 
-# Email settings
-
-# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-
-# EMAIL_HOST = "smtp.gmail.com"
-
-# EMAIL_PORT = 587
-
-# EMAIL_USE_TLS = True
-
-# EMAIL_HOST_USER = "dani.edu.java@gmail.com"
-
-# EMAIL_HOST_PASSWORD = "thmw aaqt mugf mctj"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
