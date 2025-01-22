@@ -1,4 +1,11 @@
 {
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Projeto Django com Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build src/styles.css -o dist/styles.css"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
   }
