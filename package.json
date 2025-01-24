@@ -4,7 +4,7 @@
   "description": "Projeto Django com Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss build src/styles.css -o dist/styles.css"
+    "build:css": "tailwindcss build ./static/css/input.css -o ./static/dist/output.css"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
