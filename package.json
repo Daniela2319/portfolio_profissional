@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Projeto Django com Tailwind CSS",
-  "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss build ./static/css/input.css -o ./static/dist/output.css"
   },
