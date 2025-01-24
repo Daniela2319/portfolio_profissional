@@ -4,13 +4,16 @@
     {
       "src": "myprojeto/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "20mb", "runtime": "python3.12" }
+      "config": { 
+        "maxLambdaSize": "20mb", 
+        "runtime": "python3.12" 
+      }
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "staticfiles/$1"
+      "dest": "myapp/static/$1"  
     },
     {
       "src": "/(.*)",
