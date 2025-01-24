@@ -133,15 +133,13 @@ USE_TZ = True
 
 # Configuração dos arquivos estáticos
 STATIC_URL = "/static/"
-
-# Diretórios adicionais para arquivos estáticos (somente durante o desenvolvimento)
-# Diretórios adicionais de arquivos estáticos
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "myapp/static"),
 ]
-# Caminho absoluto para coletar arquivos estáticos
-# Diretório onde os arquivos estáticos serão coletados (somente para produção)
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 # Default primary key field type

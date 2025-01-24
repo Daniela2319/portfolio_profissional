@@ -34,31 +34,18 @@
     <div class="container mx-auto px-6 lg:px-20">
       <!-- Linha de Divisão -->
       <div class="border-b border-gray-600 pb-6 mb-6">
-        <!-- Logo e Navegação -->
-        <div class="flex flex-col lg:flex-row items-center justify-between">
-          <!-- Logo -->
-          <a href="{% url 'home' %}" class="text-2xl font-bold text-yellow-400 mb-4 lg:mb-0">
-            Daniela Velter
-          </a>
-          <!-- Links de Navegação -->
-          <ul class="flex space-x-6 text-gray-400">
-            <li><a href="{% url 'sobre' %}" class="hover:text-yellow-400">Sobre</a></li>
-            <li><a href="{% url 'projeto' %}" class="hover:text-yellow-400">Projetos</a></li>
-            <li><a href="{% url 'contato' %}" class="hover:text-yellow-400">Contato</a></li>
-          </ul>
-        </div>
       </div>
 
       <!-- Redes Sociais -->
       <div class="flex justify-center space-x-6">
         <!-- GitHub -->
         <a href="https://github.com/Daniela2319" target="_blank" class="text-gray-400 hover:text-yellow-400">
-          <img src="{% static 'img/logo/circuloC.png' %}" alt="GitHub" class="h-6 w-6">
+          <img src="{% static 'img/logo/circuloC.png' %}" alt="GitHub" class="h-24 w-24">
         </a>
         <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/danielavelteredu/" target="_blank"
           class="text-gray-400 hover:text-yellow-400">
-          <img src="{% static 'img/logo/linkedin.png' %}" alt="LinkedIn" class="h-6 w-6">
+          <img src="{% static 'img/logo/linkedin.png' %}" alt="LinkedIn" class="h-24 w-24">
         </a>
       </div>
 
