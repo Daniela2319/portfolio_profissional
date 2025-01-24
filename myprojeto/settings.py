@@ -134,13 +134,15 @@ USE_TZ = True
 # Configuração dos arquivos estáticos
 STATIC_URL = "/static/"
 
-# Caminho absoluto para coletar arquivos estáticos
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
+# Diretórios adicionais para arquivos estáticos (somente durante o desenvolvimento)
 # Diretórios adicionais de arquivos estáticos
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "myapp/static"),
 ]
+# Caminho absoluto para coletar arquivos estáticos
+# Diretório onde os arquivos estáticos serão coletados (somente para produção)
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
