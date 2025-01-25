@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 import os
 from pathlib import Path
-from decouple import config
+
+# from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,13 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# Secret Key
-SECRET_KEY = config("SECRET_KEY")
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = "django-insecure-pxk&^gr31!i9@duioutov2ionja@89adjexa+b5!kq0rbk-ao^"
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", default=False, cast=bool)
-ALLOWED_HOSTS = config(
-    "ALLOWED_HOSTS", default="localhost,127.0.0.1,.vercel.app"
-).split(",")
+DEBUG = True
+
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -85,16 +87,16 @@ WSGI_APPLICATION = "myprojeto.wsgi.application"
 #         "NAME": BASE_DIR / "db.sqlite3",
 #     }
 # }
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": config("DATABASE_NAME"),
-        "USER": config("DATABASE_USER"),
-        "PASSWORD": config("DATABASE_PASSWORD"),
-        "HOST": config("DATABASE_HOST"),
-        "PORT": config("DATABASE_PORT", default="5432"),
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": config("DATABASE_NAME"),
+#         "USER": config("DATABASE_USER"),
+#         "PASSWORD": config("DATABASE_PASSWORD"),
+#         "HOST": config("DATABASE_HOST"),
+#         "PORT": config("DATABASE_PORT", default="5432"),
+#     }
+# }
 
 
 # Password validation
@@ -133,13 +135,14 @@ USE_TZ = True
 
 # Configuração dos arquivos estáticos
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "myapp/static"),
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# MEDIA_URL = "/media/"
+# MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 # Default primary key field type
@@ -149,9 +152,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # type: ignore
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = config("EMAIL_HOST", default="localhost")
-EMAIL_PORT = config("EMAIL_PORT", cast=int, default=25)
-EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool)
-EMAIL_HOST_USER = config("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = config("EMAIL_HOST", default="localhost")
+# EMAIL_PORT = config("EMAIL_PORT", cast=int, default=25)
+# EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool)
+# EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+# EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")

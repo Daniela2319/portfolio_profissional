@@ -18,14 +18,11 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/static/$1"  
+      "dest": "/staticfiles/$1"  
     },
     {
       "src": "/(.*)",
       "dest": "myprojeto/wsgi.py"
     }
-  ],
-  "env": {
-    "DJANGO_SETTINGS_MODULE": "myprojeto.settings"
-  }
+  ]
 }
