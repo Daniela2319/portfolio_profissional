@@ -31,11 +31,9 @@ Portfólio - Home
 
 <!-- Carrossel de Tecnologias -->
 <div class="p-4">
-  <P class="text-yellow-400 text-center font-bold text-2xl">TECNOLOGIAS</P>
-
-  <div class="container flex justify-center items-center mt-10 m-2 p-4">
+  <div class="container mx-auto mt-10 p-4">
     <div class="overflow-hidden relative w-full">
-      <div class="flex gap-6 animate-scroll">
+      <div class="flex gap-6 animate-scroll justify-center">
         <img src="{% static 'assets/img/logo/pythonjunior.png' %}" alt="python" class="h-28">
         <img src="{% static 'assets/img/logo/javajunior.png' %}" alt="java" class="h-28">
         <img src="{% static 'assets/img/logo/estrutura.png' %}" alt="html" class="h-28">
@@ -43,12 +41,26 @@ Portfólio - Home
         <img src="{% static 'assets/img/logo/sqlbanco.png' %}" alt="sql" class="h-28">
         <img src="{% static 'assets/img/logo/githubteste.png' %}" alt="gitHub" class="h-28">
         <img src="{% static 'assets/img/logo/pythonjunior.png' %}" alt="python" class="h-28">
-
       </div>
     </div>
   </div>
 </div>
 
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(50);
+    }
+
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+</style>
 
 <!-- Projetos -->
 <section id="projetos" class="py-20">
