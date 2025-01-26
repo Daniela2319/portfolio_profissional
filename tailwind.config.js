@@ -2,8 +2,8 @@
 module.exports = {
   content: [    
     './myapp/templates/**/*.html', // Caminho para os templates Django
-    './static/**/*.css', // Caminho para os arquivos CSS
-    // "./myapp/static/**/*.js", // Caminho para os arquivos JS
+    // './static/**/*.css', // Caminho para os arquivos CSS
+    "./static/**/*.js", // Caminho para os arquivos JS
 ],
   theme: {
     extend: { transitionDuration: {
