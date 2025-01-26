@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Django project with Tailwind CSS",
   "scripts": {
-    "build:css": "postcss static/css/input.css -o static/css/output.css --watch"
+    "build:css": "postcss staticfiles/css/input.css -o staticfiles/css/output.css --watch"
   },
   "dependencies": {
     "tailwindcss": "^3.0.0",
