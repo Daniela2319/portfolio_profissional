@@ -1,6 +1,7 @@
 asgiref==3.8.1
 Django==4.2.18
 packaging==24.2
+python-decouple==3.8
 pyupgrade==3.19.1
 sqlparse==0.5.3
 tokenize_rt==6.1.0
